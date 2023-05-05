@@ -1,0 +1,89 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<canvas id="pie-chart" style="width: 50%; height: 200px;"></canvas>
+
+<script>
+  var pieData = {
+    labels: ["Za", "Przeciw", "Bez opinii"],
+    datasets: [{
+      data: [50, 30, 20],
+      backgroundColor: [
+        '#28a745',
+        '#dc3545',
+        '#6c757d'
+      ]
+    }]
+  };
+
+  var pieOptions = {
+    responsive: true,
+    legend: {
+      position: 'bottom'
+    }
+  };
+
+  var pieChart = new Chart(document.getElementById('pie-chart'), {
+    type: 'pie',
+    data: pieData,
+    options: pieOptions
+  });
+</script>
+
+<!-- Tworzenie wykresu słupkowego -->
+<canvas id="bar-chart" style="width: 50%; height: 200px;"></canvas>
+
+<script>
+  var barData = {
+    labels: ["1 gwiazdka", "2 gwiazdki", "3 gwiazdki", "4 gwiazdki", "5 gwiazdek"],
+    datasets: [{
+      label: "Liczba opinii",
+      data: [5, 15, 25, 50, 70],
+      backgroundColor: [
+        '#007bff',
+        '#007bff',
+        '#007bff',
+        '#007bff',
+        '#007bff'
+      ],
+      borderColor: [
+        '#007bff',
+        '#007bff',
+        '#007bff',
+        '#007bff',
+        '#007bff'
+      ],
+      borderWidth: 2
+    }]
+  };
+
+  var barOptions = {
+    responsive: true,
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  };
+
+  var barChart = new Chart(document.getElementById('bar-chart'), {
+    type: 'bar',
+    data: barData,
+    options: barOptions
+  });
+</script>
+<div class="col-md-12 text-center">
+    <a href="file:///C:/Users/Wiesiu%20PC/Desktop/Zadania/technologie%20webowe%202/Temat%201/scenariusz%201/produkt1.html" class="btn btn-primary">Powrót</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Lista produktów</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Scenariusz 1</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav nav-TABS">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="file:///C:/Users/Wiesiu%20PC/Desktop/Zadania/technologie%20webowe%202/Temat%201/scenariusz%201/ekstracja%20opini.html"> Ekstrakcja opinii </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="file:///C:/Users/Wiesiu%20PC/Desktop/Zadania/technologie%20webowe%202/Temat%201/scenariusz%201/Lista%20produkt%C3%B3w.html">Lista produktów</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"> Strona główna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">O autorze</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</head>
+<body>
+  <div class="container">
+    <h1>Lista produktów</h1>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Nazwa produktu</th>
+          <th>Liczba opinii</th>
+          <th>Liczba wad</th>
+          <th>Liczba zalet</th>
+          <th>Średnia ocena</th>
+          <th>Pobierz plik z opiniami</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="file:///C:/Users/Wiesiu%20PC/Desktop/Zadania/technologie%20webowe%202/Temat%201/scenariusz%201/produkt1.html" class="btn btn-primary">Produkt 1</a></td>
+          <td>50</td>
+          <td>10</td>
+          <td>20</td>
+          <td>4.5</td>
+          <td>
+            <a href="opinie_produktu_1.csv" class="btn btn-default border-primary">Pobierz plik CSV</a>
+            <a href="opinie_produktu_1.xlsx" class="btn btn-default border-primary">Pobierz plik XLSX</a>
+            <a href="opinie_produktu_1.json" class="btn btn-default border-primary">Pobierz plik JSON</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="file:///C:/Users/Wiesiu%20PC/Desktop/Zadania/technologie%20webowe%202/Temat%201/scenariusz%201/produkt2.html" class="btn btn-primary">Produkt 2</a></td>
+          <td>30</td>
+          <td>5</td>
+          <td>10</td>
+          <td>3.8</td>
+          <td>
+            <a href="opinie_produktu_2.csv" class="btn btn-default border-primary">Pobierz plik CSV</a>
+            <a href="opinie_produktu_2.xlsx" class="btn btn-default border-primary">Pobierz plik XLSX</a>
+            <a href="opinie_produktu_2.json" class="btn btn-default border-primary">Pobierz plik JSON</a>
+          </td>
+        </tr>
+        <!-- Tutaj można dodać więcej wierszy dla innych produktów -->
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <a href="file:///C:/Users/Wiesiu%20PC/Desktop/Zadania/technologie%20webowe%202/Temat%201/scenariusz%201/index.html" class="btn btn-primary">Powrót</a>
+    </div>
+  </div>
+</body>
+</html>
